@@ -39,5 +39,12 @@ REQUIREMNETS:
    decides not to provide any filters, order the results based on the average daily price. Submit
    your editable SQL query that your code executes.
    
-Screenshots:
+   
+   
+![image](https://user-images.githubusercontent.com/31099562/167290443-0e104e60-115e-472a-b5dc-7e112720016b.png)
+
+![image](https://user-images.githubusercontent.com/31099562/167290473-ea1c8a1e-0ae3-484f-8dd8-4e6c6dd84e28.png)
+
+![image](https://user-images.githubusercontent.com/31099562/167290492-77c82fd8-470c-4e21-bf46-04b78e04725d.png)
+
 
