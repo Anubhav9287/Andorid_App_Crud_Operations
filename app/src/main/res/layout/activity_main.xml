@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"> <!--IMPORTANT otherwise backgrnd img. will not fill the whole screen -->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Requirement 1:"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/texttitle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Information About New Customer:"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/texttitle"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textSize="24dp"
+        android:layout_below="@+id/texttitle1"
+        android:inputType="textPersonName"
+        />
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:textSize="24dp"
+        android:layout_below="@+id/name"
+        android:inputType="text"
+        />
+<!--    <EditText-->
+<!--        android:id="@+id/dob"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Date of Birth"-->
+<!--        android:textSize="24dp"-->
+<!--        android:layout_below="@+id/contact"-->
+<!--        android:inputType="date"-->
+<!--        />-->
+    <Button
+        android:id="@+id/btnAddCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Add New Customer"
+        android:layout_below="@+id/contact"
+        />
+<!--    <Button-->
+<!--        android:id="@+id/btnUpdate"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="24dp"-->
+<!--        android:text="Update Data"-->
+<!--        android:layout_below="@+id/btnInsert"-->
+<!--        />-->
+<!--    <Button-->
+<!--        android:id="@+id/btnDelete"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="24dp"-->
+<!--        android:text="Delete Data"-->
+<!--        android:layout_below="@+id/btnUpdate"-->
+<!--        />-->
+<!--    <Button-->
+<!--        android:id="@+id/btnView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="24dp"-->
+<!--        android:text="View Data"-->
+<!--        android:layout_below="@+id/btnInsert"-->
+<!--        />-->
+    <Button
+        android:id="@+id/btnViewCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="View Data Customer"
+        android:layout_below="@+id/btnAddCustomer"
+        />
+
+
+    <!--    Requiremnet 2 Start here-->
+
+    <TextView
+        android:id="@+id/texttitle_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Requirement 2:"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnViewCustomer"
+        />
+
+    <TextView
+        android:id="@+id/texttitle_line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add new Vehicle:"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/texttitle_line"
+        />
+    <EditText
+        android:id="@+id/vid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vehicle ID"
+        android:textSize="24dp"
+        android:layout_below="@+id/texttitle_line2"
+        android:inputType="textPersonName"
+        />
+    <EditText
+        android:id="@+id/vdesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vehicle Description"
+        android:textSize="24dp"
+        android:layout_below="@+id/vid"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/vyear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Year"
+        android:textSize="24dp"
+        android:layout_below="@+id/vdesc"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/vtype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vehicle Type"
+        android:textSize="24dp"
+        android:layout_below="@+id/vyear"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/vcategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vehicle Category"
+        android:textSize="24dp"
+        android:layout_below="@+id/vtype"
+        android:inputType="number"
+        />
+    <Button
+        android:id="@+id/btnAddNewVehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Add New Vehicle"
+        android:layout_below="@+id/vcategory"
+        />
+    <Button
+        android:id="@+id/btnViewVehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="View Vehicle Details"
+        android:layout_below="@+id/btnAddNewVehicle"
+        />
+<!--    Requiremnt 3 start here-->
+    <TextView
+        android:id="@+id/texttitle_line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Requirement 3:"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnViewVehicle"
+        />
+    <TextView
+        android:id="@+id/texttitle_line4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search for Vehicle:"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/texttitle_line3"
+        />
+    <TextView
+        android:id="@+id/texttitle_line5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type: 1-Compact, 2-Medium, 3-Large, 4-SUV, 5-Truck, 6-Van"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/texttitle_line4"
+        />
+    <EditText
+        android:id="@+id/veh_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type: 1,2,3,4,5,6"
+        android:width="20dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/texttitle_line5"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/veh_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Category: 0-Basic, 1-Luxury"
+        android:width="20dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/veh_type"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/veh_startdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start Date: YYYY-MM-DD"
+        android:width="20dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/veh_category"
+        android:inputType="date"
+        />
+    <EditText
+        android:id="@+id/veh_enddate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="End Date: YYYY-MM-DD"
+        android:width="20dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/veh_startdate"
+        android:inputType="date"
+        />
+    <Button
+        android:id="@+id/btnSearchVehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Search Vehicle"
+        android:layout_below="@+id/veh_enddate"
+        />
+    <EditText
+        android:id="@+id/veh_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vehicle ID"
+        android:width="20dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/btnSearchVehicle"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/veh_cust_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Customer Name"
+        android:width="20dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/veh_id"
+        android:inputType="text"
+        />
+    <Button
+        android:id="@+id/btnBookVehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Book Vehicle"
+        android:layout_below="@+id/veh_cust_name"
+        />
+    <TextView
+        android:id="@+id/texttitle_line7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Requirement 4:"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnBookVehicle"
+        />
+    <EditText
+        android:id="@+id/cust_name_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Customer Name"
+        android:width="20dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/texttitle_line7"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/returnDate_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Return Date: YYYY-MM-DD"
+        android:width="20dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/cust_name_4"
+        android:inputType="date"
+        />
+    <EditText
+        android:id="@+id/veh_id_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vehicle ID"
+        android:width="20dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/returnDate_4"
+        android:inputType="text"
+        />
+    <Button
+        android:id="@+id/btn_amountdue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Amount Due"
+        android:layout_below="@+id/veh_id_4"
+        />
+    <Button
+        android:id="@+id/btn_payment4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Payment"
+        android:layout_below="@+id/btn_amountdue"
+        />
+    <Button
+        android:id="@+id/btn_rentalDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="View Rental Details"
+        android:layout_below="@+id/btn_payment4"
+        />
+    <TextView
+        android:id="@+id/texttitle_line8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Requirement 5:"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btn_rentalDetails"
+        />
+    <TextView
+        android:id="@+id/texttitle_line9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filters:"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/texttitle_line8"
+        />
+    <EditText
+        android:id="@+id/customerid5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Customer ID: "
+        android:width="20dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/texttitle_line9"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/customername5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Customer Name:"
+        android:width="20dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/customerid5"
+        android:inputType="text"
+        />
+    <Button
+        android:id="@+id/btn_showresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Show Remaining Balance"
+        android:layout_below="@+id/customername5"
+        />
+    <TextView
+        android:id="@+id/texttitle_line10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filters:"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btn_showresult"
+        />
+    <EditText
+        android:id="@+id/vin5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vehicle VIN: "
+        android:width="20dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/texttitle_line10"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/vehc_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description: "
+        android:width="20dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/vin5"
+        android:inputType="text"
+        />
+    <Button
+        android:id="@+id/btn_showvech"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Show Average Daily Price"
+        android:layout_below="@+id/vehc_desc"
+        />
+</RelativeLayout>
+</ScrollView>
